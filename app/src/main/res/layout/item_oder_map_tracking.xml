@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/order_map_track_shape"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".67"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="Distance"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvOrderDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sofia_pro_semi_bold_az"
+                android:text="15 km"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:alpha=".67"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/tvOrderDistance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".67"
+                android:fontFamily="@font/sofia_pro_medium_az"
+                android:text="Delivery place"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="6391 Elgin St. Celina, Delaware 10299"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/order_map_track_shape_withe"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rbOrderConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="Order confirmed"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/rbPreparingFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="Preparing Food"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/rbOrderConfirmed"
+                    app:layout_constraintTop_toBottomOf="@+id/rbOrderConfirmed" />
+
+                <RadioButton
+                    android:id="@+id/rbFoodOnTheWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="Food on the way"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/rbPreparingFood"
+                    app:layout_constraintTop_toBottomOf="@+id/rbPreparingFood" />
+
+                <RadioButton
+                    android:id="@+id/rbDeliveredToYou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="Delivered to you"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/rbFoodOnTheWay"
+                    app:layout_constraintTop_toBottomOf="@+id/rbFoodOnTheWay" />
+
+                <TextView
+                    android:id="@+id/tvPreparingFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="12:30 PM"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/rbPreparingFood"
+                    app:layout_constraintEnd_toEndOf="@+id/tvOrderConfirmedDate"
+                    app:layout_constraintTop_toTopOf="@+id/rbPreparingFood" />
+
+                <TextView
+                    android:id="@+id/tvOrderConfirmedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="12:30 PM"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/rbOrderConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rbOrderConfirmed" />
+
+                <TextView
+                    android:id="@+id/tvFoodOnTheWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="12:30 PM"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/rbFoodOnTheWay"
+                    app:layout_constraintEnd_toEndOf="@+id/tvPreparingFood"
+                    app:layout_constraintTop_toTopOf="@+id/rbFoodOnTheWay" />
+
+                <TextView
+                    android:id="@+id/tvDeliveredToYou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="12:30 PM"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/rbDeliveredToYou"
+                    app:layout_constraintEnd_toEndOf="@+id/tvFoodOnTheWay"
+                    app:layout_constraintTop_toTopOf="@+id/rbDeliveredToYou" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/rivDelivery"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/user2"
+                    app:layout_constraintStart_toStartOf="@+id/rbDeliveredToYou"
+                    app:layout_constraintTop_toBottomOf="@+id/rbDeliveredToYou"
+                    app:riv_corner_radius="10dp" />
+
+                <TextView
+                    android:id="@+id/tvDeliveryID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="ID: DKS-501F9"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/rivDelivery"
+                    app:layout_constraintTop_toTopOf="@+id/rivDelivery" />
+
+                <TextView
+                    android:id="@+id/tvDeliveryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="Farion Wick"
+                    android:textColor="@color/black2"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvDeliveryID"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDeliveryID" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

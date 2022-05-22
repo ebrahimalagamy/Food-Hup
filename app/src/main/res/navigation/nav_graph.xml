@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.iqadv.collections.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_welcomePageFragment"
+            app:destination="@id/welcomePageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.iqadv.collections.ui.auth.signUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_verificationCodeFragment"
+            app:destination="@id/verificationCodeFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.iqadv.collections.ui.auth.signIn.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.iqadv.collections.ui.auth.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/verificationCodeFragment"
+        android:name="com.iqadv.collections.ui.auth.VerificationCodeFragment"
+        android:label="fragment_verification_code"
+        tools:layout="@layout/fragment_verification_code" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.iqadv.collections.ui.splash.onBoarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.iqadv.collections.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_filterFragment"
+            app:destination="@id/filterFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom" />
+        <action
+            android:id="@+id/action_homeFragment_to_resturantProfileFragment"
+            app:destination="@id/resturantProfileFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom" />
+        <action
+            android:id="@+id/action_homeFragment_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom" />
+        <action
+            android:id="@+id/action_homeFragment_to_deliveryAddressFragment2"
+            app:destination="@id/deliveryAddressFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.iqadv.collections.ui.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_selectAddressFragment"
+            app:destination="@id/selectAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="com.iqadv.collections.ui.auth.phone.PhoneNumberFragment"
+        android:label="fragment_phone_number"
+        tools:layout="@layout/fragment_phone_number">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="pass"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomePageFragment"
+        android:name="com.iqadv.collections.ui.splash.WelcomePageFragment"
+        android:label="fragment_welcome_page"
+        tools:layout="@layout/fragment_welcome_page">
+        <action
+            android:id="@+id/action_welcomePageFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_welcomePageFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_welcomePageFragment_to_signInFragment2"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_welcomePageFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/welcomePageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="com.iqadv.collections.ui.resturant.foodDetails.FoodDetailsFragment"
+        android:label="fragment_food_details"
+        tools:layout="@layout/fragment_food_details">
+        <argument
+            android:name="foodDetails"
+            app:argType="com.iqadv.collections.model.restaurantDetails.FoodDetailsModel" />
+        <action
+            android:id="@+id/action_foodDetailsFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resturantProfileFragment"
+        android:name="com.iqadv.collections.ui.resturant.resturantProfile.ResturantProfileFragment"
+        android:label="fragment_resturant_profile"
+        tools:layout="@layout/fragment_resturant_profile">
+        <action
+            android:id="@+id/action_resturantProfileFragment_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment" />
+        <argument
+            android:name="RestaurantDetails"
+            app:argType="com.iqadv.collections.model.restaurantDetails.RestaurantModel" />
+        <action
+            android:id="@+id/action_resturantProfileFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.iqadv.collections.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.iqadv.collections.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom"/>
+        <action
+            android:id="@+id/action_searchFragment_to_resturantProfileFragment"
+            app:destination="@id/resturantProfileFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom"
+           />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.iqadv.collections.ui.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_paymentFragment_to_addNewPaymentFragment"
+            app:destination="@id/addNewPaymentFragment" />
+        <argument
+            android:name="addressModel"
+            app:argType="com.iqadv.collections.models.AddressModel"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapViewFragment"
+        android:name="com.iqadv.collections.ui.map.MapViewFragment"
+        android:label="fragment_map_view"
+        tools:layout="@layout/fragment_map_view">
+        <action
+            android:id="@+id/action_mapViewFragment_to_resturantProfileFragment"
+            app:destination="@id/resturantProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.iqadv.collections.ui.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.iqadv.collections.ui.favourite.FavouriteFragment"
+        android:label="fragment_favourite_fragemnt"
+        tools:layout="@layout/fragment_favourite_fragemnt" />
+    <fragment
+        android:id="@+id/myOrderFragment"
+        android:name="com.iqadv.collections.ui.order.myOrder.MyOrderFragment"
+        android:label="fragment_my_order"
+        tools:layout="@layout/fragment_my_order" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.iqadv.collections.ui.filter.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.iqadv.collections.ui.orderDetails.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details" />
+    <fragment
+        android:id="@+id/addNewAddressFragment"
+        android:name="com.iqadv.collections.ui.addresses.addNewAddress.AddNewAddressFragment"
+        android:label="fragment_add_new_address"
+        tools:layout="@layout/fragment_add_new_address" />
+    <fragment
+        android:id="@+id/addNewPaymentFragment"
+        android:name="com.iqadv.collections.ui.payment.addNewPayment.AddNewPaymentFragment"
+        android:label="fragment_add_new_payment"
+        tools:layout="@layout/fragment_add_new_payment" />
+    <fragment
+        android:id="@+id/selectAddressFragment"
+        android:name="com.iqadv.collections.ui.addresses.selectAddress.SelectAddressFragment"
+        android:label="fragment_delivery_address"
+        tools:layout="@layout/fragment_selected_address">
+        <action
+            android:id="@+id/action_deliveryAddressFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deliveryAddressFragment"
+        android:name="com.iqadv.collections.ui.addresses.deliveryAddress.DeliveryAddressFragment"
+        android:label="fragment_delivery_address"
+        tools:layout="@layout/fragment_delivery_address" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.iqadv.collections.ui.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+        <argument
+            android:name="categoryModel"
+            app:argType="com.iqadv.collections.model.CategoryModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapOrderTrackingFragment"
+        android:name="com.iqadv.collections.ui.order.mapOrderTracking.MapOrderTrackingFragment"
+        android:label="fragment_map_order_tracking"
+        tools:layout="@layout/fragment_map_order_tracking" />
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="com.iqadv.collections.ui.reviews.ReviewsFragment"
+        android:label="fragment_reviews"
+        tools:layout="@layout/fragment_reviews" />
+</navigation>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable-v24/category_shape_orange.xml" value="0.1265" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable-v24/onboarding_indicator_inactive.xml" value="0.118" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable-v24/shape_number_yellow.xml" value="0.118" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable-v24/shape_oval_unFavourite.xml" value="0.1245" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/back_tabs.xml" value="0.153" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/button_ovel.xml" value="0.16" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/button_shape_payment_stroke.xml" value="0.2105" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/button_shape_start.xml" value="0.16" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/button_skip_shape.xml" value="0.16" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/button_splash_shape.xml" value="0.16" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/category_shape.xml" value="0.2425" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/edit_text_design.xml" value="0.128" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2105" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_baseline_minimize_24.xml" value="0.1735" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_cart.xml" value="0.102" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_cart_orange.xml" value="0.1655" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_favouite.xml" value="0.1" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_fff.xml" value="0.105" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_home.xml" value="0.102" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_location.xml" value="0.102" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/ic_notification.xml" value="0.102" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/map_search.xml" value="0.166" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/order_map_track_shape.xml" value="0.119" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/order_map_track_shape_withe.xml" value="0.1215" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/search_shap.xml" value="0.1615" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/shape_button_orange.xml" value="0.252" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/shape_button_orange_stroke.xml" value="0.16" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/shape_button_white.xml" value="0.252" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/shape_oval.xml" value="0.1245" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/drawable/toggle_selector.xml" value="0.205" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/activity_on_boarding.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/dialog_layout.xml" value="0.176" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/dialog_resturant_info.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/favourite_icon.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/favourite_layout.xml" value="0.176" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/first_search_item.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_add_new_address.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_add_new_payment.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_blank.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_blank2.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_cart.xml" value="0.176" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_category.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_delivery_address.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_favourite_fragemnt.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_filter.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_food_details.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_forget_password.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_location.xml" value="0.1" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_map_order_tracking.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_map_test.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_map_view.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_my_order.xml" value="0.176" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_notification.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_order_details.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_payment.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_phone_number.xml" value="0.18796296296296297" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_restaurant_profile_view_model.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_resturant_profile.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_reviews.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_search.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_selected_address.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_sign_in.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_splash.xml" value="0.24256410256410257" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_verification_code.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_view_pager.xml" value="0.25" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/fragment_welcome_page.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_address.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_cart.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_category.xml" value="0.4" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_container_onboarding.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_food_search.xml" value="0.176" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_history_order.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_oder_map_tracking.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_restaurant.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_restaurant_category.xml" value="0.4" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_restaurant_category_Favorite.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_restaurant_category_favorite.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_restaurant_detail_map.xml" value="0.34201954397394135" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_restaurant_favourite.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_resturent_search.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_reviews.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_search.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_tag.xml" value="0.536" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/item_upcoming_order.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/items_tags.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/items_types.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/menu_drawer.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/sliding_drawer.xml" value="0.264" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/toggle_layout.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/toogle_button.xml" value="0.24074074074074073" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/layout/toolbar.xml" value="0.2" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/menu/bottom_nav.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Ebrah/AndroidStudioProjects/final Project  Orange/collections/app/src/main/res/menu/map_type_menu.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/Ebrah/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/auto_complete_list.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/ODC/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/drawable/unseen.xml" value="0.25462962962962965" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/activity_find_products.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/activity_screen3.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/hdr.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/lbg_category.xml" value="0.5" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/lbg_product.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/listitem.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ODC/StudioProjects/collections/app/src/main/res/layout/listitem_grid.xml" value="0.32407407407407407" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

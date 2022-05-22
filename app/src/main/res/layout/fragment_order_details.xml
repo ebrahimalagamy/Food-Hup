@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.orderDetails.OrderDetailsFragment">
+
+    <include
+        android:id="@+id/toolBarOrderDetails"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarOrderDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/riv_upcoming"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rest_search_image_2"
+                        app:riv_corner_radius="10dp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvDateHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/sofia_pro_regular_az"
+                    android:maxLines="1"
+                    android:text="30 jun 10.30 "
+                    android:textColor="@color/second_tx_color"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+                <TextView
+                    android:id="@+id/tvNumberOfItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/sofia_pro_regular_az"
+                    android:maxLines="1"
+                    android:text="3 items"
+                    android:textColor="@color/second_tx_color"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvDateHistory"
+                    app:layout_constraintStart_toEndOf="@+id/tvDateHistory"
+                    app:layout_constraintTop_toTopOf="@+id/tvDateHistory" />
+
+                <TextView
+                    android:id="@+id/tvRestaurantMapAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:maxLines="1"
+                    android:text="Starbucks"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvDateHistory"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDateHistory" />
+
+                <TextView
+                    android:id="@+id/tvOrderHistoryStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_regular_az"
+                    android:maxLines="1"
+                    android:text="Order Delivered"
+                    android:textColor="#4EE476"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                    app:layout_constraintStart_toStartOf="@+id/tvRestaurantMapAddress"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRestaurantMapAddress" />
+
+                <TextView
+                    android:id="@+id/tvNumberOfOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_regular_az"
+                    android:text="$13.30"
+                    android:textColor="@color/orange"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:text="Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sofia_pro_medium_az"
+                    android:text="6391 Elgin St. Celina, Delaware 10299"
+                    android:textColor="#272D2F"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="20dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/rivDeliverImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/user2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/rivDeliverImage"
+                    app:layout_constraintStart_toEndOf="@+id/rivDeliverImage"
+                    app:layout_constraintTop_toTopOf="@+id/rivDeliverImage">
+
+                    <TextView
+                        android:id="@+id/tvDeliverID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sofia_pro_medium_az"
+                        android:text="ID: DKS-501F9"
+                        android:textColor="@color/second_tx_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvDeliverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sofia_pro_medium_az"
+                        android:text="Farion Wick"
+                        android:textColor="@color/black2"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sofia_pro_semi_bold_az"
+                android:text="Orders food"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv_cart"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_cart_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_cart_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:text="Red n hot pizza"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/riv_cart"
+                    app:layout_constraintTop_toTopOf="@+id/riv_cart" />
+
+                <TextView
+                    android:id="@+id/tv_cart_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_light"
+                    android:text="Spicy chicken, beef"
+                    android:textColor="#9796A1"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_cart_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cart_name" />
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:text="$"
+                    android:textColor="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="@+id/riv_cart"
+                    app:layout_constraintStart_toStartOf="@+id/tv_cart_description" />
+
+                <TextView
+                    android:id="@+id/tv_cart_prise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:text="9.15"
+                    android:textColor="#111719"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintStart_toEndOf="@+id/textView5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
