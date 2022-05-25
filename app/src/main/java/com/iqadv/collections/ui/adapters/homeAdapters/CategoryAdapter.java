@@ -6,11 +6,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.iqadv.collections.databinding.ItemRestaurantCategoryFavoriteBinding;
+import com.iqadv.collections.db.RoomDB;
 import com.iqadv.collections.model.restaurantDetails.FoodDetailsModel;
+import com.iqadv.collections.ui.category.CategoryFragmentArgs;
+import com.iqadv.collections.ui.category.CategoryFragmentDirections;
+import com.iqadv.collections.ui.home.HomeFragmentDirections;
 import com.iqadv.collections.utlils.Constants;
 
 import java.util.List;
@@ -20,6 +27,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
     Context context;
     LayoutInflater layoutInflater;
     List<FoodDetailsModel> list;
+    private NavController navController;
 
     public CategoryAdapter(Context context, List<FoodDetailsModel> list) {
         this.context = context;
@@ -50,15 +58,26 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                navFoodDetails(view, restaurantCategoryModel);
+            }
+        });
+        holder.binding.icFavourite.frameFavourite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RoomDB.getDatabase(context).getDao().insertFoodModel(restaurantCategoryModel);
+                holder.binding.icFavourite.ivUnFavourite.setVisibility(View.GONE);
+                holder.binding.icFavourite.ivFavourite.setVisibility(View.VISIBLE);
 
             }
         });
-//        holder.binding.icFavourite.frameFavourite.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
+
+
+    }
+
+    private void navFoodDetails(View view, FoodDetailsModel restaurantCategoryModel) {
+        navController = Navigation.findNavController(view);
+        NavDirections action = CategoryFragmentDirections.actionCategoryFragmentToFoodDetailsFragment(restaurantCategoryModel);
+        navController.navigate(action);
     }
 
     @Override

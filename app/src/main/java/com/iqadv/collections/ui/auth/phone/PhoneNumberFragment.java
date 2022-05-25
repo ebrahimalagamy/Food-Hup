@@ -16,6 +16,7 @@ import androidx.navigation.Navigation;
 import com.iqadv.collections.R;
 import com.iqadv.collections.databinding.FragmentPhoneNumberBinding;
 import com.iqadv.collections.ui.auth.signUp.SignUpViewModel;
+import com.iqadv.collections.utlils.LoadingDialog;
 
 import java.io.IOException;
 
@@ -26,6 +27,8 @@ public class PhoneNumberFragment extends Fragment {
 
     private FragmentPhoneNumberBinding binding;
     private PhoneNumberFragmentArgs args;
+    private LoadingDialog loadingDialog;
+
     private SignUpViewModel signUpViewModel;
 
     @Override
@@ -41,10 +44,12 @@ public class PhoneNumberFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         args = PhoneNumberFragmentArgs.fromBundle(getArguments());
         signUpViewModel = new SignUpViewModel();
+        loadingDialog = new LoadingDialog(requireActivity());
 
         binding.btnSendPhone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                loadingDialog.startLoading();
                 signUpViewModel.register("signup", "user",
                         args.getEmail(), args.getPass(), args.getName(),
                         binding.ccp.getSelectedCountryCode() + binding.etPhoneNumber.getText().toString()
@@ -59,11 +64,12 @@ public class PhoneNumberFragment extends Fragment {
                             }else if (responseBody.string().equals("mobile_exist")){
                                 Toast.makeText(requireActivity(), "Mobile exist try again", Toast.LENGTH_SHORT).show();
 
-                            }else {
-                                Toast.makeText(requireActivity(), "Sign up Successfully", Toast.LENGTH_SHORT).show();
-                                Navigation.findNavController(view).navigate(R.id.signInFragment);
                             }
+                            Toast.makeText(requireActivity(), "Sign up Successfully", Toast.LENGTH_SHORT).show();
+                            Navigation.findNavController(view).navigate(R.id.signInFragment);
                                 Log.e("responseBody", responseBody.string());
+                            loadingDialog.stopLoading();
+
                         } catch (IOException e) {
                             e.printStackTrace();
                         }

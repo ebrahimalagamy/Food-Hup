@@ -2,11 +2,14 @@ package com.iqadv.collections.ui.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.iqadv.collections.R;
 import com.iqadv.collections.databinding.ItemUpcomingOrderBinding;
 import com.iqadv.collections.models.UpcomingOderModel;
 
@@ -41,6 +44,12 @@ public class UpcomingOrderAdapter extends RecyclerView.Adapter<UpcomingOrderAdap
         holder.itemUpcomingOrderBinding.tvTimeToArrive.setText(upcomingOderModel.getArrivalTime());
         holder.itemUpcomingOrderBinding.tvOrderStatus.setText(upcomingOderModel.getOrderStatus());
         holder.itemUpcomingOrderBinding.rivUpcoming.setImageResource(upcomingOderModel.getRestUpcomingImage());
+        holder.itemUpcomingOrderBinding.btnTrackOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_myOrderFragment_to_mapOrderTrackingFragment);
+            }
+        });
     }
 
     @Override

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,6 +38,7 @@ public class PaymentFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         bindView();
+        bindToolBar();
 //        homeViewModel.getAddresses().observe(requireActivity(), new Observer<ArrayList<AddressModel>>() {
 //            @Override
 //            public void onChanged(ArrayList<AddressModel> addressModels) {
@@ -60,5 +62,18 @@ public class PaymentFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.selectAddressFragment));
         binding.ivAddPayment.setOnClickListener(view ->
                 Navigation.findNavController(view).navigate(R.id.action_paymentFragment_to_addNewPaymentFragment));
+
+        binding.btnSaveNewAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(requireActivity(), "Order Confirmed", Toast.LENGTH_SHORT).show();
+                Navigation.findNavController(view).navigate(R.id.action_paymentFragment_to_myOrderFragment);
+            }
+        });
+    }
+
+    private void bindToolBar(){
+        binding.toolBarPayment.tvScreenName.setVisibility(View.VISIBLE);
+        binding.toolBarPayment.tvScreenName.setText("Payment");
     }
 }

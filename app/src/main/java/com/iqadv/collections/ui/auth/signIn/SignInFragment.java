@@ -1,6 +1,5 @@
 package com.iqadv.collections.ui.auth.signIn;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,9 +12,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import com.google.gson.Gson;
 import com.iqadv.collections.R;
 import com.iqadv.collections.databinding.FragmentSignInBinding;
+import com.iqadv.collections.db.RoomDB;
 import com.iqadv.collections.utlils.LoadingDialog;
 
 public class SignInFragment extends Fragment {
@@ -24,10 +23,6 @@ public class SignInFragment extends Fragment {
     private String email;
     private String pass;
     private LoadingDialog loadingDialog;
-    SharedPreferences sharedPref;
-    SharedPreferences.Editor prefsEditor;
-    Gson gson;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,18 +37,9 @@ public class SignInFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         signInViewModel = new SignInViewModel();
         loadingDialog = new LoadingDialog(getActivity());
-
-//        sharedPref = requireActivity().getSharedPreferences("user", Context.MODE_PRIVATE);
-//        prefsEditor = sharedPref.edit();
-//        gson = new Gson();
-
-
         bindView();
     }
-//    String json = gson.toJson(loginModel);
-//                            prefsEditor.putString("loginModel", json);
-//                            prefsEditor.apply();
-//                            Log.e("user", loginModel.getName());
+
     private void bindView() {
 
         binding.btnLognIn.setOnClickListener(view -> {
@@ -63,6 +49,7 @@ public class SignInFragment extends Fragment {
                 Log.e("vald", email + pass);
                 signInViewModel.getUser(email, pass, "user", "login")
                         .observe(requireActivity(), loginModel -> {
+                            RoomDB.getDatabase(requireActivity()).getUserDao().insertUserModel(loginModel);
                             Navigation.findNavController(view).navigate(R.id.action_signInFragment_to_homeFragment);
                             loadingDialog.stopLoading();
                         });

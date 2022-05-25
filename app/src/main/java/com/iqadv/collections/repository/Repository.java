@@ -230,10 +230,9 @@ public class Repository {
         OrderDetailsModel orderDetailsModel = new OrderDetailsModel("30.300954", "31.755047", "12.5 km", "nasr city", "true", "12.15",
                 "true", "12.30", "false", "12.35", "false", "12.45", "ibrahim", "12365DJFL", "01026241542", R.drawable.user2);
 
-        alUpcomingOrder.add(new UpcomingOderModel(1, "20 Jun, 10:30", "6 items", "Starbucks", "Order Delivered",
-                "12.5$", R.drawable.profile_image_rest, orderDetailsModel));
-        alUpcomingOrder.add(new UpcomingOderModel(1, "20 Jun, 10:30", "6 items", "Starbucks", "Order Delivered",
-                "12.5$", R.drawable.profile_image_rest, orderDetailsModel));
+        alUpcomingOrder.add(new UpcomingOderModel(1, "20 Jun, 10:30", "6 items", "Starbucks", "35 min",
+                "12.5$", R.drawable.rest_search_image_4, orderDetailsModel));
+
 
         mutableLiveData.setValue(alUpcomingOrder);
 

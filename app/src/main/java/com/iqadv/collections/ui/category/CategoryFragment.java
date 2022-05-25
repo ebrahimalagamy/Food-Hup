@@ -59,19 +59,5 @@ public class CategoryFragment extends Fragment {
 
             }
         });
-//        categoryViewModel.getRestaurantCategory().observe(requireActivity(), new Observer<ArrayList<RestaurantCategoryModel>>() {
-//            @Override
-//            public void onChanged(ArrayList<RestaurantCategoryModel> restaurantCategoryModels) {
-//                restaurantCategoryModelArrayList.addAll(restaurantCategoryModels);
-//
-//
-//            }
-//        });
-//        CategoryAdapter categoryAdapter = new CategoryAdapter(requireActivity(), restaurantCategoryModelArrayList);
-//        binding.recyclerViewCategory.setLayoutManager(new LinearLayoutManager(getActivity(),
-//                LinearLayoutManager.VERTICAL, false));
-//        binding.recyclerViewCategory.setAdapter(categoryAdapter);
-//
-//    }
     }
 }

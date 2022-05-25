@@ -55,19 +55,21 @@ public class MyOrderFragment extends Fragment {
             upcomingOrderAdapter = new UpcomingOrderAdapter(getActivity(), upcomingOderModels);
             binding.recyclerViewMyOrder.setLayoutManager(new LinearLayoutManager(getActivity(),
                     LinearLayoutManager.VERTICAL, false));
+            binding.recyclerViewMyOrder.setAdapter(upcomingOrderAdapter);
+
         });
 
 
         ArrayList<HistoryOrderModel> historyOrderModels = new ArrayList<>();
-        historyOrderModels.add(new HistoryOrderModel(1, "20 Jun, 10:30", "6 items", "Starbucks", "Order Delivered",
+        historyOrderModels.add(new HistoryOrderModel(1, "20 Jun, 10:30", "6 items", "Starbucks", "Delivered",
                 "12.5$", R.drawable.profile_image_rest));
 
-        historyOrderModels.add(new HistoryOrderModel(2, "15 Jun, 12:00", "2 items", "Mc", "Order Delivered",
+        historyOrderModels.add(new HistoryOrderModel(2, "15 Jun, 12:00", "2 items", "Mc", "Delivered",
                 "5$", R.drawable.profile_image_rest));
-        historyOrderModels.add(new HistoryOrderModel(1, "20 Jun, 10:30", "6 items", "Starbucks", "Order Delivered",
+        historyOrderModels.add(new HistoryOrderModel(1, "20 Jun, 10:30", "6 items", "Starbucks", "Delivered",
                 "12.5$", R.drawable.profile_image_rest));
 
-        historyOrderModels.add(new HistoryOrderModel(2, "15 Jun, 12:00", "2 items", "Mc", "Order Delivered",
+        historyOrderModels.add(new HistoryOrderModel(2, "15 Jun, 12:00", "2 items", "Mc", "Delivered",
                 "5$", R.drawable.profile_image_rest));
 
 

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -45,7 +46,7 @@ public class FoodDetailsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 RoomDB.getDatabase(requireContext()).getCartFoodDao().insertCartFoodModel(args.getFoodDetails());
-
+                Toast.makeText(requireActivity(), "Added To Cart", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -58,7 +59,7 @@ public class FoodDetailsFragment extends Fragment {
         binding.tvFoodDescription.setText(args.getFoodDetails().getDescription());
         binding.tvFoodPrice.setText(args.getFoodDetails().getPrice());
         binding.tvRate.setText(args.getFoodDetails().getRating());
-        binding.tvNumberRate.setText("("+args.getFoodDetails().getNumberOfRatings()+"+)");
+        binding.tvNumberRate.setText("(" + args.getFoodDetails().getNumberOfRatings() + "+)");
 
         binding.tvReview.setOnClickListener(new View.OnClickListener() {
             @Override

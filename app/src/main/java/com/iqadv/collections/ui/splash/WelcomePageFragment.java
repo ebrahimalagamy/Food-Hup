@@ -44,6 +44,7 @@ public class WelcomePageFragment extends Fragment {
                 if (onBoardFinished()){
                     Navigation.findNavController(view).navigate(
                             R.id.action_welcomePageFragment_to_homeFragment);
+//                            R.id.action_welcomePageFragment_to_viewPagerFragment);
                 }else {
                     Navigation.findNavController(view).navigate(
                             R.id.action_welcomePageFragment_to_viewPagerFragment);

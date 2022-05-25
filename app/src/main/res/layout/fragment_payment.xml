@@ -7,111 +7,275 @@
     android:background="@color/white"
     tools:context=".ui.payment.PaymentFragment">
 
+
     <include
         android:id="@+id/toolBarPayment"
         layout="@layout/toolbar" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/con1"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolBarPayment"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="5dp">
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/sofia_pro_semi_bold_az"
-            android:text="Shipping to"
-            android:textColor="@color/black2"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/ivSelectAddress"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/image_mapp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        android:layout_below="@id/toolBarPayment">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:orientation="vertical"
-            app:layout_constraintStart_toEndOf="@+id/ivSelectAddress"
-            app:layout_constraintTop_toTopOf="@+id/ivSelectAddress">
-
-            <TextView
-                android:id="@+id/tvLocationName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofia_pro_semi_bold_az"
-                android:text="Home"
-                android:textColor="@color/black2"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/tvMobileNumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/sofia_pro_semi_bold_az"
-                android:text="01026241542"
-                android:textColor="@color/second_tx_color"
-                android:textSize="14sp" />
-
-
-            <TextView
-                android:id="@+id/tvAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofia_pro_semi_bold_az"
-                android:maxLines="2"
-                android:text="4140 Parker Rd. Allentown"
-                android:textColor="@color/second_tx_color"
-                android:textSize="14sp" />
-        </LinearLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/con1"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:id="@+id/et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sofia_pro_semi_bold_az"
-            android:text="Payment Method"
-            android:textColor="@color/black2"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/ivAddPayment"
-            android:layout_width="50dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_shape_payment_stroke"
-            android:elevation="20dp"
-            android:padding="10dp"
-            android:src="@drawable/ic_baseline_add_24"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:orientation="vertical">
 
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolBarPayment"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:text="Shipping to"
+                    android:textColor="@color/black2"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivSelectAddress"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/image_mapp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@+id/ivSelectAddress"
+                    app:layout_constraintTop_toTopOf="@+id/ivSelectAddress">
+
+                    <TextView
+                        android:id="@+id/tvLocationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sofia_pro_semi_bold_az"
+                        android:text="Home"
+                        android:textColor="@color/black2"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/sofia_pro_semi_bold_az"
+                        android:text="01026241542"
+                        android:textColor="@color/second_tx_color"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sofia_pro_semi_bold_az"
+                        android:maxLines="2"
+                        android:text="4140 Parker Rd. Allentown"
+                        android:textColor="@color/second_tx_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/con1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:text="Payment Method"
+                    android:textColor="@color/black2"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivAddPayment"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_shape_payment_stroke"
+                    android:elevation="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_add_24_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et" />
+
+                <ImageView
+                    android:id="@+id/ivMaster"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/shape_button_orange_stroke_2"
+                    android:elevation="20dp"
+                    android:padding="25dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/icon_cart"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivAddPayment"
+                    app:layout_constraintStart_toEndOf="@+id/ivAddPayment"
+                    app:layout_constraintTop_toTopOf="@+id/ivAddPayment" />
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivAddPayment">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_background"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/tvCreditCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha=".7"
+                            android:fontFamily="@font/sofia_pro_semi_bold_az"
+                            android:text="Credit Card"
+                            android:textColor="@color/white"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivSup"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/subtract"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvCreditCard" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sofia_pro_semi_bold_az"
+                            android:letterSpacing=".1"
+                            android:text="5341 1512448 54887"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            app:layout_constraintStart_toStartOf="@+id/ivSup"
+                            app:layout_constraintTop_toBottomOf="@+id/ivSup" />
+
+                        <TextView
+                            android:id="@+id/tvCreditCardName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha=".7"
+                            android:fontFamily="@font/sofia_pro_semi_bold_az"
+                            android:text="Arlene McCoy"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textView11"
+                            app:layout_constraintTop_toTopOf="@+id/iviconCridte" />
+
+                        <ImageView
+                            android:id="@+id/ivIcon1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/credit_icon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/iviconCridte"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_cart"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                    <TextView
+                        android:id="@+id/tvTotalPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sofia_pro_semi_bold_az"
+                        android:text="Total Pay"
+                        android:textColor="@color/black"
+                        android:textSize="21sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/sofia_pro_semi_bold_az"
+                        android:text="$59.08"
+                        android:textColor="@color/black"
+                        android:textSize="21sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tvAmountUSD"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvAmountUSD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sofia_pro_semi_bold_az"
+                        android:text="USD"
+                        android:textColor="@color/second_tx_color"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvAmount"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnSaveNewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_button_orange"
+                android:elevation="30dp"
+                android:fontFamily="@font/sofia_pro_semi_bold_az"
+                android:text="confirm order"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

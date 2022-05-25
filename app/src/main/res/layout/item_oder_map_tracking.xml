@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -94,7 +95,8 @@
                     android:id="@+id/rbOrderConfirmed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="false"
+                    android:checked="true"
+                    android:buttonTint="@color/orange"
                     android:fontFamily="@font/sofia_pro_medium_az"
                     android:text="Order confirmed"
                     android:textSize="15sp"
@@ -106,9 +108,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:buttonTint="@color/orange"
                     android:fontFamily="@font/sofia_pro_medium_az"
                     android:text="Preparing Food"
                     android:textSize="15sp"
+                    android:checked="true"
                     app:layout_constraintStart_toStartOf="@+id/rbOrderConfirmed"
                     app:layout_constraintTop_toBottomOf="@+id/rbOrderConfirmed" />
 
@@ -120,6 +124,7 @@
                     android:fontFamily="@font/sofia_pro_medium_az"
                     android:text="Food on the way"
                     android:textSize="15sp"
+                    android:buttonTint="@color/orange"
                     app:layout_constraintStart_toStartOf="@+id/rbPreparingFood"
                     app:layout_constraintTop_toBottomOf="@+id/rbPreparingFood" />
 
@@ -131,6 +136,7 @@
                     android:fontFamily="@font/sofia_pro_medium_az"
                     android:text="Delivered to you"
                     android:textSize="15sp"
+                    android:buttonTint="@color/orange"
                     app:layout_constraintStart_toStartOf="@+id/rbFoodOnTheWay"
                     app:layout_constraintTop_toBottomOf="@+id/rbFoodOnTheWay" />
 
@@ -213,6 +219,36 @@
                     android:textSize="15sp"
                     app:layout_constraintStart_toStartOf="@+id/tvDeliveryID"
                     app:layout_constraintTop_toBottomOf="@+id/tvDeliveryID" />
+
+                <Button
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_orange"
+                    android:drawableStart="@drawable/delivry_call"
+                    android:drawablePadding="10dp"
+                    android:elevation="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/sofia_pro_semi_bold_az"
+                    android:paddingHorizontal="5dp"
+                    android:paddingEnd="15dp"
+                    android:text="Call"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/rivDelivery"
+                    app:layout_constraintEnd_toStartOf="@+id/ivMaster"
+                    app:layout_constraintTop_toTopOf="@+id/rivDelivery" />
+
+                <ImageView
+                    android:id="@+id/ivMaster"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_button_orange_stroke"
+                    android:elevation="20dp"
+                    android:padding="15dp"
+                    android:src="@drawable/delivry_message"
+                    app:layout_constraintBottom_toBottomOf="@+id/rivDelivery"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rivDelivery" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

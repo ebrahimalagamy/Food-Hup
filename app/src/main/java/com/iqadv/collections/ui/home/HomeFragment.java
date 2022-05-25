@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.iqadv.collections.R;
 import com.iqadv.collections.databinding.FragmentHomeBinding;
+import com.iqadv.collections.db.RoomDB;
 import com.iqadv.collections.ui.adapters.homeAdapters.CategoryHomeAdapter;
 import com.iqadv.collections.ui.adapters.homeAdapters.PopularItemsAdapter;
 import com.iqadv.collections.ui.adapters.resturant.RestaurantsAdapter;
@@ -67,13 +68,17 @@ public class HomeFragment extends Fragment implements RecyclerViewClick {
         bindPopularItemRecycler();
         bindSpinner();
         bindSliding();
+        bindUserInfo();
 
-//        SharedPreferences sharedPref = requireActivity().getSharedPreferences("user", Context.MODE_PRIVATE);
-//        Gson gson = new Gson();
-//        String json = sharedPref.getString("LoginModel", "");
-//        obj = gson.fromJson(json, LoginModel.class);
+    }
 
+    private void bindUserInfo() {
 
+        TextView name = slidingRootNav.getLayout().findViewById(R.id.tv_name);
+        name.setText(RoomDB.getDatabase(requireActivity()).getUserDao().getUserInfo().getName());
+
+        TextView email = slidingRootNav.getLayout().findViewById(R.id.tv_email);
+        email.setText(RoomDB.getDatabase(requireActivity()).getUserDao().getUserInfo().getEmail());
     }
 
     // get popular items data

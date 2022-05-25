@@ -82,7 +82,9 @@ public class RestaurantsAdapter extends RecyclerView.Adapter<RestaurantsAdapter.
 //                if(listener != null){
 //                    listener.onItemClick();
 //                }
-//                RoomDB.getDatabase(context).getRestaurantDao().insertRestaurantModel(restaurantModel);
+                RoomDB.getDatabase(context).getRestaurantDao().insertRestaurantModel(restaurantModel);
+                holder.binding.icFavourite.ivFavourite.setVisibility(View.VISIBLE);
+                holder.binding.icFavourite.ivUnFavourite.setVisibility(View.GONE);
             }
         });
 

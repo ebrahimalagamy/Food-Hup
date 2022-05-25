@@ -8,11 +8,14 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.iqadv.collections.R;
 import com.iqadv.collections.model.restaurantDetails.RestaurantModel;
+import com.iqadv.collections.ui.favourite.FavouriteFragmentDirections;
 import com.iqadv.collections.utlils.Constants;
 import com.makeramen.roundedimageview.RoundedImageView;
 
@@ -48,15 +51,20 @@ public class RestaurantFavouriteAdapter extends RecyclerView.Adapter<RestaurantF
         holder.deliveryTime.setText(restaurantModel.getDeliveryTime());
         Glide.with(context).load(Constants.IMAGE_URL +
                 restaurantModel.getCoverPhoto()).into(holder.rivRestaurant);
-
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nitCategoryFragment(view,restaurantModel);
+            }
+        });
     }
 
-//    private void nitCategoryFragment(View view, RestaurantModel restaurantModel) {
-//        navController = Navigation.findNavController(view);
-//        NavDirections action = HomeFragmentDirections.actionHomeFragmentToResturantProfileFragment(restaurantModel);
-//        navController.navigate(action);
-//
-//    }
+    private void nitCategoryFragment(View view, RestaurantModel restaurantModel) {
+        navController = Navigation.findNavController(view);
+        NavDirections action = FavouriteFragmentDirections.actionFavoriteFragmentToResturantProfileFragment(restaurantModel);
+        navController.navigate(action);
+
+    }
 
     @Override
     public int getItemCount() {

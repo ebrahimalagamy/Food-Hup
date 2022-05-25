@@ -20,6 +20,6 @@ public interface UserDaoClass {
     void deleteUser();
 
     @Query("select * from user")
-    RestaurantModel getAllFavouriteRestaurant();
+    LoginModel getUserInfo();
 
 }
